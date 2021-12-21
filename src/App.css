@@ -1,0 +1,105 @@
+.ServiceList, .ServiceView {
+  width: 400px;
+  margin: 20px;
+}
+
+.ServiceList button, .ServiceView button {
+  height: 35px;
+  margin: 0px 10px;
+  border: 0px;
+  background-color: #db3948;
+  color: #ffffff;
+}
+
+.ServiceList button:hover, .ServiceView button:hover {
+  background-color: #ad1d2c;
+}
+
+.ServiceList__add {
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.ServiceList__list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ServiceList__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.ServiceList__link li:hover {
+  background-color: lightgoldenrodyellow;
+}
+
+.ServiceList__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid silver;
+  margin-top: -1px;
+  padding: 10px 15px;
+}
+
+.ServiceList__controls {
+  display: flex;
+}
+
+.ServiceList__controls button {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.ServiceList__spinner, .ServiceView__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ServiceList__spinner img, .ServiceView__spinner img {
+  width: 40px;
+  animation: spinner 1s infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ServiceList__error, .ServiceView__error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #f4c6cb;
+  background-color: #f8d7da;
+  color: #711e25;
+}
+
+.ServiceView__label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ServiceView__link {
+  width: 50px;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid green;
+  cursor: pointer;
+}
